@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirection...</title>
+  <script>
+    // GitHub Pages SPA workaround
+    // Sauvegarde le chemin demandé dans sessionStorage
+    // puis redirige vers index.html qui le restaurera
+    var path = window.location.pathname;
+    sessionStorage.setItem('spa_redirect', path);
+    window.location.replace('/');
+  </script>
+</head>
+<body></body>
+</html>
